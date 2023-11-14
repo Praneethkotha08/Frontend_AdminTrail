@@ -24,7 +24,7 @@ function ShopList(props) {
                 <h5 className="card-title">{carName}</h5>
                 <p className="card-text">Model:{model}</p>
                 <p className="card-text">Year:{year}</p>
-                <p className="card-text">Price: {price}/-</p>
+                <p className="card-text">Price: {price}</p>
 
                 <button onClick={handleClick} class="text-light btn btn-danger">Delete</button>
                 <Link class="text-decoration-none text-light mx-3" to={"/modify/" + _id}>
