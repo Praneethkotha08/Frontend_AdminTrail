@@ -17,7 +17,7 @@ function Nav(){
                         <Link to="/upgrade" class="nav-link m-2 fs-5 p-2"style={{color:" #ffac3c"}}>Upgrade</Link>
                         <Link to="/orders" class="nav-link m-2  fs-5 p-2"style={{color:" #ffac3c"}}>Orders</Link>
                         <Link to="/list" class="nav-link m-2 fs-5 p-2"style={{color:" #ffac3c"}}>List</Link>
-                        {(localStorage.getItem('islogged')==='true') ? <button className="btn btn-danger my-3 mx-2" onClick={handlelogout} >Logout</button> : <Link to="/signin" class="nav-link m-2 yellow fs-5 ">login</Link>}
+                        {(localStorage.getItem('islogged')==='true') ? <button className="btn btn-danger my-3 mx-2" onClick={handlelogout} >Logout</button> : <Link to="/signin" class="nav-link m-2 yellow fs-5 ">Login</Link>}
 
                     </div>
                 </nav>

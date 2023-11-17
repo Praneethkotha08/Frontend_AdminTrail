@@ -5,7 +5,7 @@ function Maintain() {
   const [arr1, setArr1] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://project-final-backend-bq77.onrender.com/maintainRoute/")
+    Axios.get("https://backendss-uvix.onrender.com/maintainRoute/")
       .then((res) => {
         if (res.status === 200) {
           setArr1(res.data);

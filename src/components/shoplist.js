@@ -23,7 +23,7 @@ function ShopList(props) {
         }
       }
     const handleClick = () =>{
-        Axios.delete("http://localhost:4000/carRoute/delete-car/" + _id )
+        Axios.delete("https://backendss-uvix.onrender.com/carRoute/delete-car/" + _id )
         .then((res)=>{
             if(res.status === 200){
                 alert("Record deleted successfully");
@@ -44,10 +44,10 @@ function ShopList(props) {
                 <h5 className="card-title">{carName}</h5>
                 <p className="card-text">Model:{model}</p>
                 <p className="card-text">Year:{year}</p>
-                <p className="card-text">Price: {price}/-</p>
+                <p className="card-text">Price: {price}</p>
 
-                <button onClick={redirectdelete} class="text-light btn btn-danger">Delete</button>
-<button class="btn btn-success mx-2" onClick={redirect}>
+                <button onClick={redirectdelete} className="text-light btn btn-danger">Delete</button>
+<button className="btn btn-success mx-2" onClick={redirect}>
     Edit
 </button>
               </div>

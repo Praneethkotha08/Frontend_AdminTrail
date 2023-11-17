@@ -24,7 +24,7 @@ function Modify() {
     });
     const [newData, setNewData] = useState([]);
     useEffect(() => {
-        Axios.get("https://project-final-backend-bq77.onrender.com/carRoute/update-car/" + id)
+        Axios.get("https://backendss-uvix.onrender.com/carRoute/update-car/" + id)
             .then((res) => {
                 if (res.status === 200) {
                     const {
@@ -82,7 +82,7 @@ function Modify() {
             enginecapacity:newData[12],
             milage:newData[13]
         };
-        Axios.put("https://project-final-backend-bq77.onrender.com/carRoute/update-car/" + id, data)
+        Axios.put("https://backendss-uvix.onrender.com/carRoute/update-car/" + id, data)
             .then((res) => {
                 if (res.status === 200)
                     alert("Record updated successfully");

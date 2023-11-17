@@ -5,7 +5,7 @@ function Repair() {
   const [arr2, setArr2] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://project-final-backend-bq77.onrender.com/repairRoute/")
+    Axios.get("https://backendss-uvix.onrender.com/repairRoute/")
       .then((res) => {
         if (res.status === 200) {
           setArr2(res.data);

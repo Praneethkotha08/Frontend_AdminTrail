@@ -5,7 +5,7 @@ function Upgrade() {
   const [arr3, setArr3] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://project-final-backend-bq77.onrender.com/upgradeRoute/")
+    Axios.get("https://backendss-uvix.onrender.com/upgradeRoute/")
       .then((res) => {
         if (res.status === 200) {
           setArr3(res.data);

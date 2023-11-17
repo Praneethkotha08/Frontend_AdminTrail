@@ -5,7 +5,7 @@ function Orders() {
   const [arr, setArr] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://project-final-backend-bq77.onrender.com/userRoute/")
+    Axios.get("https://backendss-uvix.onrender.com/userRoute/")
       .then((res) => {
         if (res.status === 200) {
           setArr(res.data);
