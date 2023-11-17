@@ -28,7 +28,7 @@ function CreateCar() {
       milage:arr[13]
     };
 
-    Axios.post("https://project-final-backend-bq77.onrender.com/carRoute/add-car", data)
+    Axios.post("http://localhost:4000/carRoute/add-car", data)
           .then((res) => {
             if (res.status === 200) {
               alert("Record added");
@@ -39,10 +39,17 @@ function CreateCar() {
           .catch((err) => alert("Error: " + err));
       
   };
-
+  const redirect=()=>{
+    if(localStorage.getItem('islogged')==='true'){
+      handleSubmit();
+    } 
+    else{
+      window.location.href='/#/signin';
+    }
+  }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={redirect}>
         <CarForm getState={getState}
           img1Value=""
           img2Value=""
